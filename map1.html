@@ -1,0 +1,7 @@
+import folium
+map = folium.Map(Location=[38.5,-99], zoom_start = 6, title = "Mapbox Bright")
+
+fg= folium.FeatureGroup(name="MYmap")
+Map.add_child(folium.Marker(Location=[38.2,-99.1]),popup="comment", icon= folium.icon("green"))
+
+map.save(map.html)
